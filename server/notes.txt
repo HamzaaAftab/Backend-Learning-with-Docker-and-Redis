@@ -1,0 +1,1 @@
+bcrypt js -> hash krny ky lye password ko
