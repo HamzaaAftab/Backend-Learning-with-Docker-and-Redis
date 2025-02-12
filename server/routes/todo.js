@@ -6,6 +6,6 @@ const router = express.Router();
 router.route("/").post(isAuthenticated , createTodo);
 router.route("/").get(getAllTodos);
 router.route("/:id").get(getTodoById);
-router.route("/:id").put(isAuthenticated,updateTodo);
-router.route("/:id").delete(isAuthenticated ,deleteTodo);
+router.route("/update/:id").put(updateTodo);
+router.route("/delete/:id").delete(deleteTodo);
 export default router;
